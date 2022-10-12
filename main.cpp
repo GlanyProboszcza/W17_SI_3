@@ -34,13 +34,14 @@ Image blendImages(const Image& imgA, const Image& imgB, int numThreads,
 int main()
 {
     ImageDataProviderFactory fabryka;
+    //TO DO
     Image wczytany = fabryka.load_image("C:\Users\XVND83\source\repos\SI\W17_SI\Image_blending\moon.ppm");
     wczytany.print();
     Image obrazek(20, 20);
     obrazek(0, 0).r = 1;
     obrazek(2, 3).g = 0.5;
     obrazek(2, 3).b = 1;
-
+    //TO DO
     fabryka.save_image("C:\Users\XVND83\source\repos\SI\W17_SI\Image_blending\moon.ppm", obrazek);
 
 }
